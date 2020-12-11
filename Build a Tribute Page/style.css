@@ -1,0 +1,21 @@
+#title {
+    text-align: center;
+    background-color: rgb(211, 204, 204);
+    font-weight: bolder;
+}
+
+#title2 {
+    font-weight: lighter;
+}
+
+#img-div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#img-caption {
+    text-align: center;
+    font-weight: lighter;
+}

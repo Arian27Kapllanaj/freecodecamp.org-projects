@@ -1,11 +1,12 @@
 #title {
     text-align: center;
-    background-color: rgb(211, 204, 204);
+    background-color: rgb(241, 238, 238);
     font-weight: bolder;
 }
 
 #title2 {
-    font-weight: lighter;
+    font-weight: 10;
+    text-align: center;
 }
 
 #img-div {
@@ -18,4 +19,39 @@
 #img-caption {
     text-align: center;
     font-weight: lighter;
+}
+
+#tribute-info {
+    background-color: rgb(241, 238, 238);
+}
+
+#info {
+    text-align: center;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 33em;
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 32em;
+    font-style: italic;
+    font-weight: 100;
+}
+
+#tribute-link {
+    text-align: center;
+}
+
+h3 {
+    font-weight: 1000;
 }

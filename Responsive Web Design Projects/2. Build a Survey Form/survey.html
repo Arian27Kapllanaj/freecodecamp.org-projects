@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div id="title"></div>
+    <div id="description"></div>
+    <form id="survey-form" action="">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email" required><br>
+        <br>
+        <label for="email">Age(optional)</label><br>
+        <input type="text" id="number" name="age"><br>
+        <br>
+        <label for="dropdown">Would you recommend freeCodeCamp to a friend?</label><br>
+        <select id="dropdown" name="dropdown" required>
+            <option disabled selected value>Select current role</option>
+            <option value="Student">Student</option>
+            <option value="FullTimeJob">Full Time Job</option>
+            <option value="FullTimeLearner">Full Time Learner</option>
+            <option value="PreferNotToSay">Prefer Not To Say</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <input type="radio" id="name" name="name" required>
+        <label for="name">Definitely</label><br>
+        <input type="radio" id="name" name="name">
+        <label for="name">Maybe</label><br>
+        <input type="radio" id="name" name="name">
+        <label for="name">Not sure</label><br>
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

@@ -10,21 +10,17 @@
 
 <body>
     <div id="main">
-        <div id="title">
-            <h1>freeCodeCamp Survey Form</h1>
-        </div>
-        <div id="description">
-            <p>Thank you for taking the time to help us improve the platform</p>
-        </div>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
         <form id="survey-form" action="">
             <label for="name">Name</label><br>
             <input type="text" id="name" name="name" required><br>
             <br>
             <label for="email">Email</label><br>
-            <input type="text" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" required><br>
             <br>
             <label for="email">Age(optional)</label><br>
-            <input type="text" id="number" name="age"><br>
+            <input type="number" id="number" name="age"><br>
             <br>
             <label for="dropdown">Which option best describes your current role?</label><br>
             <select id="dropdown" name="dropdown" required>
@@ -83,7 +79,7 @@
                 </textarea>
             <br><br>
             <br>
-            <input type="submit " value="Submit ">
+            <button id="submit" type="submit" value="Submit">
         </form>
     </div>
 </body>

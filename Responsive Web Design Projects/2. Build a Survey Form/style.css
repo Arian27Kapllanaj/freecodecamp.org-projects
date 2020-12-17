@@ -1,11 +1,20 @@
 #main {
     text-align: center;
+    color: white;
 }
 
 body {
-    background-image: url("photo.jpg");
+    /*background-image: url("photo.jpg"); */
+    background-color: rgb(97, 97, 241);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#survey-form {
+    border: 3px solid black;
+    display: inline-block;
+    background-color: rgb(0, 0, 34);
+    width: 30%;
 }

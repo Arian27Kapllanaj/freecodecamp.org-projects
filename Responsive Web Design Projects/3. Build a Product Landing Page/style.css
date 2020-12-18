@@ -22,3 +22,7 @@ input[type=submit] {
     width: 410px;
     float: left;
 }
+
+#nav-bar {
+    float: inline-end;
+}

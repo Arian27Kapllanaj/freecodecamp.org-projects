@@ -17,8 +17,8 @@ input[type=submit] {
     cursor: pointer;
 }
 
-#logo {
+#header-img {
     display: inline-block;
-    width: 400px;
-    margin: 0 auto;
+    width: 410px;
+    float: left;
 }

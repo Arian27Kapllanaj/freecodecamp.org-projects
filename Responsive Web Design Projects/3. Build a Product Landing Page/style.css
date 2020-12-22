@@ -26,3 +26,8 @@ input[type=submit] {
 #nav-bar {
     float: inline-end;
 }
+
+#prices {
+    display: flex;
+    flex-direction: row;
+}

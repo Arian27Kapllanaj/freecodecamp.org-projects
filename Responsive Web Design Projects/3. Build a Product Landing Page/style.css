@@ -27,7 +27,32 @@ input[type=submit] {
     float: inline-end;
 }
 
-#prices {
+#pricing {
+    margin-top: 60px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+footer {
+    background-color: gray;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+footer>ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer>ul>li {
+    padding: 0 10px;
+}
+
+footer>span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
 }

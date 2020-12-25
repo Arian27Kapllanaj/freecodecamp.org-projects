@@ -6,6 +6,8 @@ body {
 header {
     background-color: black;
     color: white;
+    position: fixed;
+    width: 100%;
 }
 
 input[type=submit] {

@@ -1,3 +1,21 @@
 body {
     background-color: gray;
 }
+
+.navbar {
+    border-right: solid;
+    border-left: solid;
+    border-color: #999;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 23%
+}
+
+.nav-link {
+    list-style: none;
+    line-height: 40px;
+    display: block;
+    padding: 5px;
+    border: 2px solid #ddd;
+}

@@ -2,7 +2,7 @@ body {
     background-color: gray;
 }
 
-.navbar {
+#navbar {
     border-right: solid;
     border-left: solid;
     border-color: #999;
@@ -18,4 +18,15 @@ body {
     display: block;
     padding: 5px;
     border: 2px solid #ddd;
+}
+
+header {
+    font-size: 1.5rem;
+    line-height: 50px;
+    padding: 5px 0px;
+}
+
+#main-doc {
+    margin-left: 25%;
+    padding: 5px;
 }

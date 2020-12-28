@@ -1,5 +1,7 @@
 body {
     background-color: gray;
+    line-height: 1.5rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 #navbar {

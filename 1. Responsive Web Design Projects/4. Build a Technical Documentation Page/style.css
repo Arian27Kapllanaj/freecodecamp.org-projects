@@ -1,5 +1,4 @@
 body {
-    background-color: gray;
     line-height: 1.5rem;
     font-family: 'Roboto', sans-serif;
 }
@@ -31,4 +30,22 @@ header {
 #main-doc {
     margin-left: 25%;
     padding: 5px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.null {
+    padding-right: 10%;
 }

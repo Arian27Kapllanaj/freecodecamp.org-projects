@@ -31,13 +31,80 @@
         <br>
         <h2 class="projects-title">My Projects</h2>
         <br>
-        <div class="row">
-            <img src="photo1.png" alt="project1" style="width:99%">
-            <img src="photo2.png" alt="project2" style="width:99%">
+        <div class="container">
+            <img src="photo1.png" alt="project1">
+            <form action="https://codepen.io/arian27kapllanaj/full/JjRbePa" target="_blank">
+                <button class="btn">View</button>
+            </form>
+        </div>
+        <div class="container">
+            <img src="photo2.png" alt="project2">
+            <form action="https://codepen.io/arian27kapllanaj/full/RwGpvYy" target="_blank">
+                <button class="btn">View</button>
+            </form>
         </div>
     </section>
 
-
 </body>
+
+<style>
+    .projects-title {
+        text-align: center;
+    }
+    
+    .container {
+        position: relative;
+        width: 50%;
+    }
+    
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .container .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        border: none;
+        font-size: 28px;
+        color: #FFFFFF;
+        text-align: center;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .container .btn:after {
+        content: "";
+        background: #90EE90;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+    }
+    
+    .container .btn:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+    }
+</style>
 
 </html>

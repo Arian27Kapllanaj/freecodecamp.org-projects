@@ -30,18 +30,23 @@
     </section>
 
     <section id="projects">
-        <br>
-        <h2 class="projects-title">My Projects</h2>
-        <br>
-        <div class="row">
-            <div class="column">
-                <a href="https://codepen.io/arian27kapllanaj/full/JjRbePa" target="_blank" class="project-tile"><img src="photo1.png" alt="project1" style="width:100%"></a>
-            </div>
-            <div class="column">
-                <a href="https://codepen.io/arian27kapllanaj/full/RwGpvYy?" target="_blank" class="project-tile"><img src="photo2.png" alt="project2" style="width:100%"></a>
-            </div>
-            <div class="column">
-                <a href="https://codepen.io/arian27kapllanaj/full/mdrqMzv" target="_blank" class="project-tile"><img src="photo3.png" alt="project3" style="width:100%"></a>
+        <div class="background">
+            <br>
+            <h1 class="projects-title">My Projects</h1>
+            <br>
+            <div class="row">
+                <div class="column">
+                    <a href="https://codepen.io/arian27kapllanaj/full/JjRbePa" target="_blank" class="project-tile"><img src="photo1.png" alt="project1" style="width:100%"></a>
+                    <h2 class="project-name">Tribute Page</h2>
+                </div>
+                <div class="column">
+                    <a href="https://codepen.io/arian27kapllanaj/full/RwGpvYy?" target="_blank" class="project-tile"><img src="photo2.png" alt="project2" style="width:100%"></a>
+                    <h2 class="project-name">Survey Form</h2>
+                </div>
+                <div class="column">
+                    <a href="https://codepen.io/arian27kapllanaj/full/mdrqMzv" target="_blank" class="project-tile"><img src="photo3.png" alt="project3" style="width:100%"></a>
+                    <h2 class="project-name">Technical Documentation Page</h2>
+                </div>
             </div>
         </div>
     </section>
@@ -49,8 +54,8 @@
 
     <section id="contact" class="contact-section">
         <div class="contact-section-header">
-            <h2>Contact Me</h2>
-            <p>I will answer as soon as possible</p>
+            <h2 class="contact-title">Contact Me</h2>
+            <p class="contact-subtitle">I will answer as soon as possible</p>
         </div>
         <div class="contact-links">
             <a id="profile-link" href="https://github.com/Arian27Kapllanaj " target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub </a>
@@ -192,6 +197,24 @@
         content: "";
         clear: both;
         display: table;
+    }
+    
+    img {
+        border: 5px solid rgb(29, 80, 38);
+        height: 320px;
+    }
+    
+    .project-name {
+        text-align: center;
+        background-color: rgba(255, 68, 0, 0.747);
+    }
+    
+    .contact-title {
+        background-color: gray;
+    }
+    
+    .background {
+        background-image: linear-gradient(to right, rgb(54, 136, 54), rgb(223, 128, 20), rgb(54, 136, 54), rgb(223, 128, 20), rgb(54, 136, 54));
     }
 </style>
 

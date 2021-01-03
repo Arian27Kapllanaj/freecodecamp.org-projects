@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portofolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -58,9 +58,10 @@
             <p class="contact-subtitle">I will answer as soon as possible</p>
         </div>
         <div class="contact-links">
-            <a id="profile-link" href="https://github.com/Arian27Kapllanaj " target="_blank"> GitHub </a>
-            <a id="profile-link" href="ariankapllanaj@example.com"> Send a mail </a>
-            <a id="profile-link" href="tel:0681234567"> Call me </a>
+            <a href="#" id="profile-link" class="fa fa-linkedin" target="_blank"></a><br>
+            <a href="#" class="fa fa-youtube" target="_blank"></a>
+            <a href="#" class="fa fa-facebook" target="_blank"></a>
+            <a href="#" class="fa fa-twitter" target="_blank"></a>
         </div>
     </section>
 
@@ -84,6 +85,8 @@
         padding: 0 2rem;
         background: var(--main-gray);
         background-image: url("contact.jpg");
+        /* for codepen.io */
+        background-image: url("https://github.com/Arian27Kapllanaj/freecodecamp.org-projects/blob/master/1.%20Responsive%20Web%20Design%20Projects/5.%20Build%20a%20Personal%20Portfolio%20Webpage/contact.jpg?raw=true");
     }
     
     .contact-section-header>h2 {
@@ -224,6 +227,39 @@
     
     .background {
         background-image: linear-gradient(to right, rgb(54, 136, 54), rgb(223, 128, 20), rgb(54, 136, 54), rgb(223, 128, 20), rgb(54, 136, 54));
+    }
+    
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+    
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+    
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
     }
 </style>
 

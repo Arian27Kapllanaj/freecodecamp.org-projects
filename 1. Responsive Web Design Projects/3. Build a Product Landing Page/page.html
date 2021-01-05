@@ -5,51 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header id="header">
-        <img id="header-img" src="youtube.jpg" alt="youtubeLogo" />
-        <br><br><br>
+        <img id="header-img" src="https://github.com/Arian27Kapllanaj/freecodecamp.org-projects/blob/master/1.%20Responsive%20Web%20Design%20Projects/3.%20Build%20a%20Product%20Landing%20Page/youtube.jpg?raw=true" alt="youtubeLogo" />
+
         <h1>My YouTube Page</h1>
         <nav class="nav-bar" id="nav-bar">
             <button><a class="nav-link" href="#features">Features</a></button>
             <button><a class="nav-link" href="#how-it-works">How It Works</a></button>
             <button><a class="nav-link" href="#pricing">Pricing</a></button>
         </nav>
-        <br>
     </header>
-    <br><br><br><br>
-    <div class="slideshow-container">
-
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="zenvo.png" style="width:50%">
-            <div class="text">Zenvo TSR-S 2019</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="jaguar.png" style="width:50%">
-            <div class="text">Jaguar F-Pace 2017</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="nissan.png" style="width:50%">
-            <div class="text">Nissan GT-R Black Series 2012</div>
-        </div>
-
-    </div>
     <br>
-
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-    <br>
+    <div class="description"></div>
+    </section>
     <section id="features">
         <h3>Subscribe to my channel</h3>
         <form id="form" action="https://www.youtube.com/channel/UCJuaQZQTWiSoXW_qvDqz3WQ?sub_confirmation=1" target="_blank">
@@ -94,32 +65,85 @@
             <li><a href="#">Terms</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-        <span>Copyright 2020, Arian Kapllanaj</span>
+        <span>Copyright 2021, Arian Kapllanaj</span>
     </footer>
 </body>
 
-<script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 3000);
+<style>
+    body {
+        text-align: center;
+        background-color: rgb(187, 186, 186);
     }
-</script>
+    
+    header {
+        background-color: black;
+        color: white;
+        width: 100%;
+        position: fixed;
+    }
+    
+    @media (max-width: 600px) {
+        header {
+            flex-wrap: wrap;
+        }
+    }
+    
+    input[type=submit] {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    
+    #header-img {
+        width: 410px;
+    }
+    
+    #pricing {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #table {
+        background-color: #4CAF50;
+        width: 50%;
+    }
+    
+    footer {
+        background-color: gray;
+        margin-top: 30px;
+        padding: 20px;
+    }
+    
+    footer>ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    footer>ul>li {
+        padding: 0 10px;
+    }
+    
+    footer>span {
+        margin-top: 5px;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 0.9em;
+        color: #444;
+    }
+    
+    .description {
+        background-image: url("https://i.pinimg.com/originals/e1/4c/fa/e14cfadd63764f7e7863eaf427274ccf.gif");
+        height: 550px;
+        width: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+</style>
 
 </html>

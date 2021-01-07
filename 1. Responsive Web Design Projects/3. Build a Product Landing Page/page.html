@@ -45,6 +45,22 @@
         <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/CJVZBhE7w2Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
     <br><br><br>
+    <h2>Here you have some thumbnails from my YouTube videos</h2>
+    <div class="grid-container">
+        <div class="image-1">
+            <img src="zenvo.png" />
+        </div>
+        <div class="image-2">
+            <img src="jaguar.png" />
+            <img src="jaguar.png" class="second-image" />
+        </div>
+        <div class="image-3">
+            <img src="m6pov.png" />
+        </div>
+        <div class="image-4">
+            <img src="nissan.png" />
+        </div>
+    </div>
     <section id="pricing">
         <table id="table">
             <tr>
@@ -161,6 +177,85 @@
         width: 100%;
         background-size: 100% 100%;
         background-repeat: no-repeat;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "image-1 image-2 image-3 image-4";
+        grid-gap: 10px;
+    }
+    
+    .grid-container>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        color: red;
+    }
+    
+    .grid-container>div>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .image-1 {
+        grid-area: image-1;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .image-1:hover {
+        transform: scale(1.1);
+    }
+    
+    .image-2 {
+        grid-area: image-2;
+    }
+    
+    .image-2:hover {
+        transform: rotate(45deg);
+    }
+    
+    .image-2:hover .second-image {
+        display: inline;
+    }
+    
+    .second-image {
+        display: none;
+        position: absolute;
+        top: 0;
+    }
+    
+    .image-3 {
+        grid-area: image-3;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .image-3:hover {
+        transform: scale(1.1);
+    }
+    
+    .image-4 {
+        grid-area: image-4;
+        opacity: 0.4;
+    }
+    
+    .image-4:hover {
+        opacity: 1;
+    }
+    
+    @keyframes swinging {
+        0% {
+            transform: rotate(10deg);
+        }
+        50% {
+            transform: rotate(-10deg);
+        }
+        100% {
+            transform: rotate(10deg);
+        }
     }
 </style>
 
